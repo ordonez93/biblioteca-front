@@ -22,8 +22,6 @@ const auth = useAuthStore()
 const solicitud = useModalStore()
 const error = ref('')
 
-
-
 const libro = ref({
     nombre_libro: '',
     autor_libro: '',
@@ -160,7 +158,7 @@ const mostrarModal = () => {
 
                         <div>
                             <input class="formulario__btn" type="submit" name="btn-libro" id="btn-libro"
-                                :value="imagenEditar && isEdit ? 'Actualizar' : 'Guradar'">
+                                :value="imagenEditar && isEdit ? 'Actualizar' : 'Guardar'">
 
                             <input @click="mostrarModal(), resetForm()" class="formulario__btn formulario__btn--cerrar"
                                 type="button" name="btn-cerrar" id="btn-cerrar" value="Cerrar">

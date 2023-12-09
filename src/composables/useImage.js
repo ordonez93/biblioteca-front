@@ -22,7 +22,6 @@ export default function useImage() {
            await upload(data)
            cargandoImg.value = false
         }
-
     }
 
     const image = computed(() => {
